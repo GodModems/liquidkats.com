@@ -14,6 +14,13 @@ body, html {height: 100%; font-size:20px}
 h1, .logo{
   font-weight:800;
 }
+h1 {
+  text-shadow: 4px 6px 5px #00000030;
+  line-height: 1.2em;
+}
+hr {
+  margin-bottom: 2em;
+}
 .bgimg {
   background: rgb(126,8,219);
   background: radial-gradient(circle, rgba(126,8,219,1) 46%, rgba(66,10,88,1) 100%);
@@ -25,23 +32,45 @@ code{
   background:#2f0550;
   padding:.2em .4em;
   border-radius:4px;
+  cursor: pointer;
+  user-select: text;
+}
+code:hover {
+  color: #35ffff;
 }
 li{
   margin-bottom:.5em;
+  user-select: none;
 }
 span{
   background: white;
-  boarder: 1px solid black;
   padding: .2em .4em;
-  color: black;
+  margin-left: .15em;
+  color: #3b3b3b;
   opacity: 1;
-  transition: opacity .1s ease-out;
-  box-shadow: 2px 1px 10px 0px black;
+  box-shadow: 2px 2px 5px 1px #0006;
+  position: relative;
+  border-radius: 3px;
 }
 span.hidden{
   opacity: 0;
   transition: opacity .9s ease-out;
 }
+span::after {
+  content: " ";
+  position: absolute;
+  border-top: 6px solid #0000;
+  border-bottom: 6px solid #0000;
+  border-right: 6px solid white;
+  left: -5px;
+  top: calc(50% - 6px);
+  width: 0;
+  height: 0;
+}
+a:hover {
+  color: #35ffff;
+}
+
 </style>
 </head>
 <body>
@@ -52,7 +81,7 @@ span.hidden{
   </div>
   <div class="w3-display-middle">
     <h1 class="w3-jumbo w3-animate-top">Official Liquidkats Servers</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <hr class="w3-border-grey">
     <ul>
       <li><a href="https://www.curseforge.com/minecraft/modpacks/the-pixelmon-modpack">The Pixelmon Modpack v1.12.2</a> &mdash; <code>Pixelmon.Liquidkats.com</code><span class="hidden">Copied!</span></li>
       <li><a href="https://www.curseforge.com/minecraft/modpacks/sevtech-ages">SevTech: Ages</a> &mdash; <code>SevTech.Liquidkats.com</code><span class="hidden">Copied!</span> </li>
