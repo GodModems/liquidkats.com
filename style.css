@@ -1,0 +1,8 @@
+body,h1,h2,h3,p,a {font-family: "Montserrat", sans-serif;}
+.hero {
+  min-height: 80vh;
+  background: radial-gradient(circle, #7e08db 46%, #420a58 100%);
+  color: white;
+}
+section {padding:64px 16px;}
+footer {color:#fff;}
