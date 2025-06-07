@@ -1,8 +1,102 @@
-body,h1,h2,h3,p,a {font-family: "Montserrat", sans-serif;}
-.hero {
-  min-height: 80vh;
-  background: radial-gradient(circle, #7e08db 46%, #420a58 100%);
-  color: white;
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background: #111;
+  color: #fff;
 }
-section {padding:64px 16px;}
-footer {color:#fff;}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav img {
+  height: 40px;
+}
+
+.hero {
+  padding: 150px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #7e08db, #420a58);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #420a58;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav li {
+    margin: 10px 0 0;
+  }
+}
