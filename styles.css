@@ -433,3 +433,90 @@ footer .wordmark {
     text-shadow: #ffffff -1px -1px 0px, #ffffff -1px 1px 0px, #ffffff 1px 1px 0px, #ffffff 1px -1px 0px;
     color: var(--text-color);
 }
+
+@media (max-width: 900px) {
+    nav {
+        text-align: center;
+    }
+    nav .container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1em;
+    }
+    nav .logo {
+        line-height: 1.2em;
+    }
+    nav .logo-image {
+        margin: .7em auto
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+        align-items: stretch;
+        justify-content: flex-start;
+        text-align: left;
+        width: 60%;
+        margin: 0 auto;
+    }
+    nav ul li {
+        text-align: center;
+        font-size: 34px;
+        width: auto;
+        max-width: 100%;
+        line-height: 1.2em;
+    }
+
+    header {
+        min-height: 50vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    header h1 {
+        width: 100%;
+        max-width: 100%;
+        font-size: 36px;
+        line-height: 1.2em;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    section.mission {
+        padding: 2em 0;
+        text-align: center;
+    }
+
+    section.services ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    section.services ul li {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        padding: 1.5em 1em;
+    }
+    section.services ul li .card-image,
+    section.services ul li .card-text {
+        flex: none;
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    section.services ul li .card-text {
+        padding-top: 1em;
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+    section.services ul li .card-image {
+        margin: 0 auto;
+        aspect-ratio: 1 / 1;
+        max-width: 220px;
+    }
+    section.contact .contact-card {
+        max-width: 98vw;
+        padding: 1.5em 0.5em;
+    }
+}
