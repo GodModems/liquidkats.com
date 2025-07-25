@@ -361,6 +361,7 @@ section.contact .contact-card {
     box-shadow: 0 4px 24px rgba(0,0,0,0.12);
     padding: 2em 3em;
     margin: 0 auto;
+    margin-bottom: 3em;
     font-size: 18px;
     font-family: var(--font-basic);
     font-weight: 700;
@@ -417,4 +418,18 @@ section.contact .contact-card button {
 section.contact .contact-card button:hover {
     background: var(--background);
     color: var(--rgb-green);
+}
+footer {
+    background: var(--nav-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 5px solid var(--rgb-yellow);
+}
+footer .wordmark {
+    font-family: var(--chelsea-market);
+    font-weight: 700;
+    font-size: 50px;
+    text-shadow: #ffffff -1px -1px 0px, #ffffff -1px 1px 0px, #ffffff 1px 1px 0px, #ffffff 1px -1px 0px;
+    color: var(--text-color);
 }
