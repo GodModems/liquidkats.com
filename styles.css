@@ -217,13 +217,48 @@ nav ul li a {
 .bg-orange {
     background: var(--rgb-orange);
 }
+main {
+    position: relative;
+    overflow: hidden;
+}
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2em;
+    background: url("data:image/svg+xml,%3Csvg id='comp-mbmnao9y-top' preserveAspectRatio='none' data-bbox='0 100 1920 200' viewBox='0 100 1920 200' height='100%25' width='100%25' xmlns='http://www.w3.org/2000/svg' data-type='shape'%3E%3Cdefs%3E%3Cstyle%3E%23comp-mbmnao9y-top %7B fill: %23BB87FF; %7D%3C/style%3E%3C/defs%3E%3Cg%3E%3Cpath d='M1914.392 288.326c-110.231-4.798-134.428-121.68-301.124-121.68s-190.894 116.883-301.124 121.68h-15.779c-132.623-3.764-163.287-72.283-366.071-72.283s-233.445 68.519-366.071 72.283h-8.154C384.543 282.678 408.027 100 281.156 100c-123.98 0-102.173 182.678-274.845 188.326H0V300h1920v-11.674h-5.608z'/%3E%3C/g%3E%3C/svg%3E");
+    z-index: 4;
+    transform: scaleY(-1) scaleX(2);
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("Group\ 21.svg");
+    background-repeat: no-repeat;
+    z-index: 2;
+    background-position-x: -1549px;
+    background-size: 353%;
+    background-position-y: -1395px;
+}
+
 h1 {
     font-size: 45px;
     font-weight: 700;
+    z-index: 3;
 }
 header {
     min-height: 68vh;
     display: flex;
+    background: url(https://static.wixstatic.com/media/43e393_15e22bf801c543839b74782e7e537e06~mv2.png/v1/fill/w_1568,h_776,al_c,q_90,enc_avif,quality_auto/white_grid_2024x101212312.png);
+    background-size: 200%;
+    position: relative;
 }
 header .container {
     display: flex;
@@ -236,6 +271,9 @@ header h1 {
     text-align: left;
     line-height: 1.1;
     letter-spacing: 0.45px;
+    border: 2px solid white;
+    padding: 1em;
+    background: var(--background);
 }
 section.careers {
     font-size: 18px;
@@ -619,5 +657,10 @@ footer .wordmark {
     section.contact .contact-card {
         max-width: 98vw;
         padding: 1.5em 0.5em;
+    }
+    header::after {
+        background-position-x: -1921px;
+        background-size: 1102%;
+        background-position-y: -1178px;
     }
 }
