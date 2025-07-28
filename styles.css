@@ -220,6 +220,7 @@ nav ul li a {
 main {
     position: relative;
     overflow: hidden;
+    font-size: 16px;
 }
 main::before {
     content: '';
