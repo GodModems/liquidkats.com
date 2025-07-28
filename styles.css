@@ -256,7 +256,7 @@ h1 {
 header {
     min-height: 68vh;
     display: flex;
-    background: url(https://static.wixstatic.com/media/43e393_15e22bf801c543839b74782e7e537e06~mv2.png/v1/fill/w_1568,h_776,al_c,q_90,enc_avif,quality_auto/white_grid_2024x101212312.png);
+    background: url(white_grid_2024x101212312.png);
     background-size: 200%;
     position: relative;
 }
