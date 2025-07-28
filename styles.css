@@ -275,7 +275,7 @@ section.careers .contact-card {
     font-family: var(--font-basic);
     font-weight: 700;
     line-height: 27px;
-    color: var(--text-color);
+    color: black;
 }
 
 section.careers .contact-card h2 {
@@ -291,7 +291,7 @@ section.careers .contact-card h2 {
 section.careers .contact-card input,
 section.careers .contact-card textarea {    
     background: white;
-    color: var(--text-color);
+    color: black;
     border: 5px solid var(--background);
     border-radius: 5px;
     padding: 3px;
@@ -308,7 +308,7 @@ section.careers .contact-card textarea {
 
 section.careers .contact-card label {
     font-family: var(--chelsea-market);
-    color: var(--background);
+    color: black;
     font-weight: 400;
     margin-bottom: 9px;
 }
